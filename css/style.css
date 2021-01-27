@@ -141,21 +141,21 @@ body {
 .tertiary__heading {
   padding-top: 10rem;
   margin-left: 2rem;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 600;
   letter-spacing: 1px; }
   @media screen and (min-width: 900px) {
     .tertiary__heading {
       padding-top: 10rem;
       margin-left: 5rem;
-      font-size: 8rem;
+      font-size: 6rem;
       font-weight: 600;
       letter-spacing: 1px; } }
   @media screen and (min-width: 1200px) {
     .tertiary__heading {
       padding-top: 10rem;
       margin-left: 10rem;
-      font-size: 8rem;
+      font-size: 6rem;
       font-weight: 600;
       letter-spacing: 1px; } }
 
@@ -189,22 +189,22 @@ body {
       margin-left: 5rem; } }
   .heading__quartenary--1 {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1px; }
   .heading__quartenary--2 {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1px; }
   .heading__quartenary--3 {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1px; }
   .heading__quartenary--4 {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1px; }
 
@@ -217,6 +217,9 @@ body {
     .quartenary__paragraph {
       margin-left: 5rem;
       margin-right: 5rem; } }
+  @media screen and (min-width: 1200px) {
+    .quartenary__paragraph {
+      margin-top: .5rem; } }
 
 .heading__sixtenary--1 {
   font-size: 6rem;
@@ -237,7 +240,7 @@ body {
     .heading__sixtenary--2 {
       font-size: 6rem;
       font-weight: 800;
-      display: inline; } }
+      display: inline-block; } }
 
 .heading__sixtenary--3 {
   font-size: 6rem;
@@ -260,7 +263,7 @@ body {
     .septenary__heading {
       margin-left: 5rem; } }
   .septenary__heading--1 {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 800;
     display: block; }
     @media screen and (min-width: 900px) {
@@ -274,7 +277,7 @@ body {
       font-weight: 800;
       display: inline-block; } }
   .septenary__heading--2 {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 800;
     display: inline-block;
     margin-top: -5rem; }
@@ -334,7 +337,7 @@ header {
 
 .nav-toggle-label {
   position: absolute;
-  top: 0;
+  top: -1rem;
   right: 0;
   margin-right: 1rem;
   height: 100%;
@@ -576,12 +579,19 @@ nav {
       .grid-6__container-item-1 {
         margin-left: 10rem; } }
   .grid-6__container-item-2 {
-    width: 50rem;
+    width: 36rem;
     height: 38rem;
     background-color: #1C294A;
     border-radius: 5rem;
     margin-left: 2rem;
     margin-top: 10rem; }
+    @media screen and (min-width: 1200px) {
+      .grid-6__container-item-2 {
+        width: 50rem;
+        height: 55rem;
+        background-color: #1C294A;
+        border-radius: 5rem;
+        margin-top: 0; } }
     .grid-6__container-item-2__wrapper {
       padding-top: 5rem;
       margin-left: 5rem; }
