@@ -55,9 +55,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
-
-body {
+  box-sizing: border-box;
   font-family: 'OpenSans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -114,7 +112,8 @@ body {
       padding-right: 30rem; } }
 
 .secondary__heading {
-  color: #0A183D; }
+  color: #0A183D; 
+  padding: 1.5rem;}
   .secondary__heading--1 {
     font-size: 5rem;
     display: block; }
@@ -139,7 +138,7 @@ body {
   font-weight: 600; }
 
 .tertiary__heading {
-  padding-top: 10rem;
+  padding-top: 5rem;
   margin-left: 2rem;
   font-size: 6rem;
   font-weight: 600;
@@ -170,7 +169,7 @@ body {
   letter-spacing: 1px; }
   @media screen and (min-width: 1200px) {
     .tertiary__heading-2 {
-      margin-top: -5rem; } }
+       } }
 
 .tertiary__paragraph-bx {
   margin-right: 2rem; }
@@ -305,6 +304,8 @@ body {
   margin-right: 1rem; }
 
 .btn, .btn:link, .btn:visited {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -312,11 +313,22 @@ body {
   border-radius: 10rem;
   padding: 2rem; }
 
+  .btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.281);
+  }
+
+  .btn:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+  }
+
 .btn--pink {
   background-color: #ff005A; }
 
 .btn--lb {
   background-color: #383370; }
+
 
 .btn--animated {
   animation-name: MoveInThird;
@@ -327,7 +339,7 @@ body {
 
 header {
   background-color: #08192D;
-  height: 10vh;
+  height: 13vh;
   text-align: left;
   width: 100%;
   position: relative; }
@@ -343,6 +355,8 @@ header {
   height: 100%;
   display: flex;
   align-items: center; }
+  .nav-toggle-label span{
+    margin-top: 10px;}
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
@@ -357,7 +371,8 @@ header {
     content: "";
     position: absolute; }
   .nav-toggle-label span::before {
-    bottom: 7px; }
+    bottom: 7px;
+     }
   .nav-toggle-label span::after {
     top: 7px; }
 
@@ -367,7 +382,8 @@ header {
   top: 1.5rem; }
 
 .nav-ul--1 {
-  color: #979282; }
+  color: white;
+  cursor: pointer; }
 
 .nav-ul--2 {
   color: #ff005A; }
@@ -383,7 +399,8 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    display: inline-block; }
   nav li {
     margin-bottom: 1rem;
     margin-left: 1rem; }
@@ -425,12 +442,14 @@ nav {
       margin-bottom: 0; }
     nav a {
       opacity: 1; }
-  .nav-ul {
-    margin-left: 5rem; } }
+   }
 
 .grid-1__container {
-  padding-top: 15rem;
-  padding-bottom: 20rem; }
+  padding-top: 5rem;
+  padding-bottom: 10rem; }
+  .grid-1__container-item-1 .u-top{
+      margin-top: 10rem;
+  }
   @media screen and (min-width: 1200px) {
     .grid-1__container {
       display: grid;
@@ -447,7 +466,8 @@ nav {
         display: initial; } }
   @media screen and (min-width: 1200px) {
     .grid-1__container-imgbox {
-      margin-top: -10rem; } }
+      margin-top: -12rem;
+      margin-right: 8rem; } }
   @media screen and (min-width: 900px) {
     .grid-1__container-image {
       margin-left: 10rem;
@@ -456,7 +476,7 @@ nav {
 @media screen and (min-width: 1200px) {
   .grid-2__container {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr;} }
 
 .grid-2__container-item1 {
   margin-left: 2rem;
@@ -467,7 +487,7 @@ nav {
 
 .grid-2__container-item2 {
   margin-left: 2rem;
-  margin-top: 6rem; }
+  padding-right: 1rem; }
   @media screen and (min-width: 900px) {
     .grid-2__container-item2 {
       margin-left: 10rem; } }
@@ -477,8 +497,10 @@ nav {
       margin-left: 0; } }
 
 .grid-2__container-item3 {
-  margin-left: 2rem;
-  padding-bottom: 5rem; }
+ margin: 2rem auto;
+ padding: 2rem 13.5rem;
+  }
+
   @media screen and (min-width: 900px) {
     .grid-2__container-item3 {
       margin-left: 10rem; } }
@@ -496,9 +518,13 @@ nav {
       left: 90rem; } }
 
 .grid-3__container {
-  margin-left: 2rem;
-  margin-top: 3rem;
-  padding-bottom: 15rem; }
+  padding-bottom: 5rem; }
+.grid-3__container > *{
+  text-align: center;}
+.grid-3__container-item-1, .grid-3__container-item-2, .grid-3__container-item-3{
+  margin-top: 3.5rem;
+}
+
   @media screen and (min-width: 900px) {
     .grid-3__container {
       display: grid;
@@ -511,14 +537,13 @@ nav {
       margin-left: 10rem; } }
 
 .grid-3__container-imgbx {
-  padding-bottom: 2rem; }
+   }
   @media screen and (min-width: 1200px) {
     .grid-3__container-imgbx {
       padding-bottom: 0; } }
 
 .grid-3__container-imgbx--1 {
-  padding-bottom: 2rem;
-  padding-top: 2.5rem; }
+   }
   @media screen and (min-width: 1200px) {
     .grid-3__container-imgbx--1 {
       padding-bottom: 3rem;
@@ -530,7 +555,7 @@ nav {
     padding-bottom: 1rem; } }
 
 .grid-4__container {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-left: 2rem;
   margin-right: 2rem; }
   @media screen and (min-width: 1200px) {
@@ -567,14 +592,17 @@ nav {
     margin-top: 4rem; }
 
 .grid-6__container {
-  padding-top: 10rem;
-  padding-bottom: 15rem; }
+  padding: 8rem 0; }
   @media screen and (min-width: 1200px) {
     .grid-6__container {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
   .grid-6__container-item-1 {
     margin-left: 2rem; }
+  .grid-6__container-item-1 .u-top{
+    padding: 1rem 11.5rem;
+    padding-bottom: 0;
+  }
     @media screen and (min-width: 1200px) {
       .grid-6__container-item-1 {
         margin-left: 10rem; } }
@@ -601,8 +629,8 @@ nav {
 
 .grid-7__container {
   margin-left: 2rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem; }
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
   @media screen and (min-width: 1200px) {
     .grid-7__container-item-1 {
       display: grid;
@@ -642,3 +670,39 @@ nav {
 
 .section-5 {
   background-color: #0A183D; }
+
+
+  footer{
+    background-color: #08192D;
+  }
+
+  footer .footer-top{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top h1{
+    margin-top: 2rem;
+  }
+
+  .footer-top-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-top-list > li{
+    display: inline-block;
+  }
+
+  .input-field input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(51, 67, 85);
+    border-bottom: 2px solid pink;
+  }
+
+  .input-field button{
+    width: 13rem;
+  }
