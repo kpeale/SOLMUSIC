@@ -683,6 +683,7 @@ nav {
 
   .footer-top h1{
     margin-top: 2rem;
+    text-align: center;
   }
 
   .footer-top-list{
@@ -695,13 +696,58 @@ nav {
     display: inline-block;
   }
 
+  .footer-top-list img{
+    cursor: pointer;
+    color: aliceblue;
+  }
+  
+  .footer-bottom-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  .footer-bottom-1 > div{
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .footer-bottom-1 h4{
+    font-size: 2rem;
+  }
+
+  .footer-bottom-1 ul{
+    list-style-type: none;
+    margin: none;
+  }
+
+  .footer-bottom-1 li{
+    margin-top: 6px;
+    
+  }
+
+  .footer-bottom-2{
+    padding: 1rem;
+  }
+
+  
+
+  .footer-bottom-2 label{
+    /* visibility: hidden; */
+  }
+
+  .footer-bottom-2 .input-field{
+    margin: 0 auto;
+  }
+
   .input-field input{
     padding: 5px;
     border: none;
     outline: none;
-    background-color: rgb(51, 67, 85);
+    background-color: #08192D;
     border-bottom: 2px solid pink;
   }
+
+  
 
   .input-field button{
     width: 13rem;
