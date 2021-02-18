@@ -179,7 +179,8 @@ body {
 
 .tertiary__paragraph {
   color: #6a7090;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding-left: 10px; }
 
 .heading__quartenary {
   color: #0A183D; }
@@ -258,6 +259,16 @@ body {
 
 .septenary__heading {
   color: #0A183D; }
+
+.septenary__heading--1{
+  margin-left: .8rem;
+  margin-bottom: 2.5rem;
+}
+
+.septenary__heading--2{
+  
+}
+
   @media screen and (min-width: 900px) {
     .septenary__heading {
       margin-left: 5rem; } }
@@ -291,7 +302,8 @@ body {
   color: #6a7090;
   font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 5rem; }
+  padding: 0 .5rem;
+  margin-top: 2.5rem; }
   @media screen and (min-width: 900px) {
     .septenary__paragraph {
       margin-left: 5rem;
@@ -690,15 +702,22 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
   }
 
-  .footer-top-list > li{
-    display: inline-block;
+  .footer-top-list > li > a:hover > .list-icons{
+    fill: white;
   }
 
-  .footer-top-list img{
+  .list-icons{
     cursor: pointer;
-    color: aliceblue;
+    fill: red;
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.2s;
   }
   
   .footer-bottom-1{
@@ -729,26 +748,75 @@ nav {
     padding: 1rem;
   }
 
-  
+  .footer-bottom-2 h1{
+    text-align: center;
+  }
 
-  .footer-bottom-2 label{
-    /* visibility: hidden; */
+  .footer-bottom-2 .label{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 2.5rem;
   }
 
   .footer-bottom-2 .input-field{
     margin: 0 auto;
   }
 
+  .input-field{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+
   .input-field input{
+    color: white;
     padding: 5px;
     border: none;
     outline: none;
-    background-color: #08192D;
-    border-bottom: 2px solid pink;
+    background-color: inherit;
+    border-bottom: 2px solid white;
   }
 
   
 
   .input-field button{
     width: 13rem;
+  }
+
+  .download{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn--download{
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    /* outline: none; */
+    font-size: 1.2rem;
+    background-color: rgb(37, 82, 133);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.281);
+  }
+
+  .btn--download:first-of-type{
+    margin-right: .5rem;
+  }
+
+  .btn--download:nth-of-type(2) span{
+    margin-right: .7rem;
+  }
+  
+  .btn--download > img{
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white;
+  }
+
+  .btn--download > span{
+    margin-left: .3rem;
+    
   }

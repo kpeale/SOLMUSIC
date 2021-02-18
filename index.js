@@ -5,6 +5,7 @@ const subscribeBtn = document.querySelector('.subscribe-button');
 inputLabel.style.visibility = 'hidden';
 input.addEventListener('click', function(e){
     inputLabel.style.visibility = 'visible';
+    inputLabel.style.transitionTimingFunction = 'ease-in-out'; 
 })
 
 input.addEventListener('blur', function(e){
@@ -19,5 +20,8 @@ subscribeBtn.addEventListener('click', function(e){
         inputLabel.style.visibility = 'hidden';
     }else{
         inputLabel.textContent = 'Please enter a valid email address.'
+        inputLabel.style.color = 'red';
     }
+
+    
 })
