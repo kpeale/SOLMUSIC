@@ -6,6 +6,10 @@
 1800px +: Big Desktop
 */
 
+/* 
+  375PX --- > 23.4375em
+*/
+
 .heading-primary {
   animation-name: MoveInFirst;
   animation-duration: .5s;
@@ -58,23 +62,23 @@ html {
   font-size: 62.5%; 
 }
   
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; 
-    } 
-  }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%; 
+  } 
+}
 
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; 
-    } 
-  }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%; 
+  } 
+}
 
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; 
-    } 
-  }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%; 
+  } 
+}
 
 body {
   box-sizing: border-box;
@@ -109,52 +113,53 @@ body {
   margin-right: 3rem;
 }
 
-  @media screen and (min-width: 37.5em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300; 
-    } 
-  }
+@media screen and (min-width: 37.5em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300; 
+  } 
+}
 
-  @media screen and (min-width: 56.25em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300;
-      padding-right: 30rem; 
-    } 
-  }
+@media screen and (min-width: 56.25em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 10rem;
+    margin-right: 0; 
+  } 
+}
 
-  @media screen and (min-width: 75em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300;
-      padding-right: 0; 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 0; 
+  } 
+}
 
-  @media screen and (min-width: 93.75em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300;
-      padding-right: 0; 
-    } 
-  }
+@media screen and (min-width: 93.75em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 0; 
+  } 
+}
 
-  @media screen and (min-width: 112.5em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300;
-      padding-right: 0; 
-    } 
-  }
+@media screen and (min-width: 112.5em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 0; 
+  } 
+}
 
-  @media screen and (min-width: 150em) {
-    .primary__paragraph {
-      font-size: 1.6rem;
-      font-weight: 300;
-      padding-right: 30rem; 
-    } 
-  }
+@media screen and (min-width: 150em) {
+  .primary__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 30rem; 
+  } 
+}
 
 .secondary__heading {
   color: #0A183D; 
@@ -204,25 +209,25 @@ body {
   letter-spacing: 1px; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .tertiary__heading {
-      padding-top: 10rem;
-      margin-left: 5rem;
-      font-size: 6rem;
-      font-weight: 600;
-      letter-spacing: 1px; 
-    } 
-  }
+@media screen and (min-width: 56.25em) {
+  .tertiary__heading {
+    padding-top: 10rem;
+    margin-left: 5rem;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 1px; 
+  } 
+}
 
-  @media screen and (min-width: 75em) {
-    .tertiary__heading {
-      padding-top: 10rem;
-      margin-left: 10rem;
-      font-size: 6rem;
-      font-weight: 600;
-      letter-spacing: 1px; 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .tertiary__heading {
+    padding-top: 10rem;
+    margin-left: 10rem;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 1px; 
+  } 
+}
 
 .tertiary__heading-1 {
   font-size: 3rem;
@@ -235,21 +240,22 @@ body {
   font-weight: 600;
   letter-spacing: 1px; 
 }
-  @media screen and (min-width: 75em) {
-    .tertiary__heading-2 {
 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .tertiary__heading-2 {
+
+  } 
+}
 
 .tertiary__paragraph-bx {
   margin-right: 2rem;
 }
 
-  @media screen and (min-width: 75em) {
-    .tertiary__paragraph-bx {
-      margin-right: 5rem; 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .tertiary__paragraph-bx {
+    margin-right: 5rem; 
+  } 
+}
 
 .tertiary__paragraph {
   color: #6a7090;
@@ -261,11 +267,11 @@ body {
   color: #0A183D; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .heading__quartenary {
-      margin-left: 5rem; 
-    }
+@media screen and (min-width: 56.25em) {
+  .heading__quartenary {
+    margin-left: 5rem; 
   }
+}
 
 .heading__quartenary--1 {
   display: inline-block;
@@ -295,7 +301,6 @@ body {
   letter-spacing: 1px; 
 }
 
-
 .quartenary__paragraph {
   color: #6a7090;
   font-size: 1.6rem;
@@ -303,18 +308,18 @@ body {
   margin-top: 5rem; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .quartenary__paragraph {
-      margin-left: 5rem;
-      margin-right: 5rem; 
-    } 
-  }
+@media screen and (min-width: 56.25em) {
+  .quartenary__paragraph {
+    margin-left: 5rem;
+    margin-right: 5rem; 
+  } 
+}
 
-  @media screen and (min-width: 75em) {
-    .quartenary__paragraph {
-      margin-top: .5rem; 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .quartenary__paragraph {
+    margin-top: .5rem; 
+  } 
+}
 
 .heading__sixtenary--1 {
   font-size: 6rem;
@@ -322,13 +327,13 @@ body {
   display: block; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .heading__sixtenary--1 {
-      font-size: 6rem;
-      font-weight: 800;
-      display: inline; 
-    } 
-  }
+@media screen and (min-width: 56.25em) {
+  .heading__sixtenary--1 {
+    font-size: 6rem;
+    font-weight: 800;
+    display: inline; 
+  } 
+}
 
 .heading__sixtenary--2 {
   font-size: 6rem;
@@ -337,13 +342,13 @@ body {
   margin-top: -4rem; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .heading__sixtenary--2 {
-      font-size: 6rem;
-      font-weight: 800;
-      display: inline-block;
-    }
+@media screen and (min-width: 56.25em) {
+  .heading__sixtenary--2 {
+    font-size: 6rem;
+    font-weight: 800;
+    display: inline-block;
   }
+}
 
 .heading__sixtenary--3 {
   font-size: 6rem;
@@ -367,11 +372,11 @@ body {
   color: #0A183D; 
 }
 
-  @media screen and (min-width: 56.5em) {
-    .septenary__heading {
-      margin-left: 5rem; 
-    } 
-  }
+@media screen and (min-width: 56.5em) {
+  .septenary__heading {
+    margin-left: 5rem; 
+  } 
+}
 
 .septenary__heading--1{
   margin-left: .8rem;
@@ -404,14 +409,14 @@ body {
   margin-top: -5rem;
 }
 
-  @media screen and (min-width: 75em) {
-    .septenary__heading--2 {
-      font-size: 6rem;
-      font-weight: 800;
-      display: inline-block;
-      margin-top: -5rem; 
-    } 
-  }
+@media screen and (min-width: 75em) {
+  .septenary__heading--2 {
+    font-size: 6rem;
+    font-weight: 800;
+    display: inline-block;
+    margin-top: -5rem; 
+  } 
+}
 
 .septenary__paragraph {
   color: #6a7090;
@@ -421,12 +426,12 @@ body {
   margin-top: 2.5rem; 
 }
 
-  @media screen and (min-width: 56.25em) {
-    .septenary__paragraph {
-      margin-left: 5rem;
-      margin-right: 5rem; 
-    } 
-  }
+@media screen and (min-width: 56.25em) {
+  .septenary__paragraph {
+    margin-left: 5rem;
+    margin-right: 5rem; 
+  } 
+}
 
 /*Utility Classes*/
 .u-top {
@@ -627,8 +632,8 @@ nav a:hover {
   padding-bottom: 10rem; 
 }
 
-.grid-1__container-item-1 .u-top{
-    margin-top: 10rem;
+.section-1--btn{
+  margin-left: -2rem;
 }
 
 @media screen and (min-width: 75em) {
@@ -644,7 +649,7 @@ nav a:hover {
 
 @media screen and (min-width: 56.25em) {
   .grid-1__container-item-1 {
-    margin-left: 10rem; 
+    margin-left: 5rem; 
   } 
 }
 
@@ -652,23 +657,10 @@ nav a:hover {
   display: none; 
 }
 
-@media screen and (min-width: 56.25em) {
-  .grid-1__container-item-2 {
-    display: initial;
-  }
-}
-
 @media screen and (min-width: 75em) {
   .grid-1__container-imgbox {
     margin-top: -12rem;
     margin-right: 8rem; 
-  } 
-}
-
-@media screen and (min-width: 56.25em) {
-  .grid-1__container-image {
-    margin-left: 10rem;
-    margin-top: 5rem; 
   } 
 }
 
@@ -747,6 +739,7 @@ nav a:hover {
 .grid-3__container > *{
   text-align: center;
 }
+
 .grid-3__container-item-1, .grid-3__container-item-2, .grid-3__container-item-3{
   margin-top: 3.5rem;
 }
@@ -1129,4 +1122,131 @@ footer .footer-top{
 
 .btn--download > span{
   margin-left: .3rem;
+}
+
+/* MEDIA QUERY FOR DEVICES BELOW 600PX */
+@media screen and (max-width: 37.5em){
+  .section-1--btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-1__container{
+    padding-bottom: 5rem;
+  }
+
+  .grid-2__container-item3, .grid-6__container-item-1 > .u-top{
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-6__container-item-1 > .u-top{
+    margin-left: -1rem;
+  }
+
+  .grid-6__container-item-2{
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
+
+/*MEDIA QUERY FOR DEVICES BELOW 900PX*/
+@media screen and (max-width: 56.25em){
+  .section-1--btn{
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .grid-1__container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  .grid-1__container-item-1 > *{
+    max-width: max-content;
+  }
+
+  .grid-1__container-item-2{
+    display: inline-block;
+    order: 1;
+  }
+
+  .grid-1__container-image{
+    background-size: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 5rem;
+    padding-right: 5rem;
+  }
+
+  .section-1--btn{
+    margin-top: 3rem;
+  }
+
+  .grid-2__container-item2{
+    margin-left: 5rem;
+  }
+
+  .grid-2__container-item3{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .tertiary__heading-1, .tertiary__heading-2, .tertiary__paragraph{
+    text-align: left;
+  }
+
+  .section-5-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-6__container-item-2{
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .septenary__heading--1{
+    font-size: 6rem;
+  }
+  
+}
+
+@media screen and (max-width: 56.25em) and (min-width: 37.5em){
+  .footer-bottom{
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  .footer-bottom-1{
+    margin-left: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+  }
+
+  .footer-bottom-1 h4{
+    font-size: 3rem;
+  }
+
+  .footer-bottom-1 li{
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  .footer-bottom-2{
+    padding-top: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 37.5em){
+  .grid-1__container-imgbox{
+    display: none;
+  }
 }
