@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLMUSIC</title>
 
-     <!--google fonts-->
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,800&display=swap" rel="stylesheet">
-     
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,800&display=swap" rel="stylesheet">
+
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     
-    <!--css stytlesheet-->
+    <!--css stylesheet-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--Navigation-->
-   
     <header>
-      <h1 class="logo"> <span class="logo-span">SOL</span>MUSIC</h1>
-      <!--checkbox-->
+      <h1 class="logo"><span class="logo-span">SOL</span>MUSIC</h1>
 
+      <!--checkbox-->
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
       <nav>
@@ -32,8 +33,9 @@
         </ul>
 
         <ul class="nav-ul">
-          <li><a href="#"> <span class="nav-ul--1">Help</span> | Login</a></li>
-          <li><a href="#"> <span class="nav-ul--2">Create an account</span> </a></li>
+          <li><a href="#"> <span class="nav-ul--1">Help</span></a></li>
+          <li><a href="#"><span class="nav-ul--3">Login</span></a></li>
+          <li><a href="#"> <span class="nav-ul--2">Create an account</span></a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
@@ -47,14 +49,12 @@
         <div class="grid-1__container-item-1">
           <h1 class="primary__heading">
             <span class="primary__heading--main">
-              <span class="logo-span">Music</span> for  </span>
-                <span class="primary__heading--sub">  everyone</span>
-         
+              <span class="logo-span">Music</span> for </span><span class="primary__heading--sub">  everyone</span>
           </h1>
           <div>
             <p class="primary__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aperiam quod aliquam odio voluptatibus amet eum sapiente quibusdam praesentium enim accusantium ipsa pariatur modi alias ullam a tenetur, placeat doloribus.</p>
           </div>
-          <div class="u-top">
+          <div class="u-top section-1--btn">
             <a href="#" class="btn btn--pink btn--animated u-right">Download now</a>
             <a href="#" class="btn btn--lb btn--animated">Start free trial</a>
           </div>
@@ -72,12 +72,12 @@
       <!--section 2-->
       <section class="section-2">
         <div class="grid-2__container">
-            <div class="grid-2__container-item1">
+            <!-- <div class="grid-2__container-item1"></div> -->
             <h2 class="secondary__heading">
                 <span class="secondary__heading--1">Unlimited</span>
                <span class="secondary__heading--2">Access to</span>
                <span class="secondary__heading--3">100K Tracks</span>
-           </h2>
+            </h2>
         </div>
 
         <div class="grid-2__container-item2">
@@ -86,10 +86,9 @@
           </p>
         </div>
 
-        <div class="grid-2__container-item3 u-top">
+        <div class="grid-2__container-item3">
           <a href="#" class="btn btn--pink">Try it now</a>
         </div>
-
       </div>
       </section>
 
@@ -99,7 +98,7 @@
         <!--THIRD GRID-->
         <div class="grid-3__container">
           <div class="grid-3__container-item-1">
-            <div class="grid-3__container-imgbx">
+            <div class="grid-3__container-imgbx--1">
               <img src="images/brain-SOLMUSIC.webp" alt="#">
             </div>
 
@@ -115,7 +114,7 @@
 
           <div class="grid-3__container-item-2">
 
-            <div  class="grid-3__container-imgbx--1" >
+            <div class="grid-3__container-imgbx--1">
               <img src="images/pointer-sm.webp" alt="pointer" class="grid-3__container-img">
             </div>
 
@@ -130,7 +129,6 @@
           </div>
 
           <div class="grid-3__container-item-3">
-
             <div  class="grid-3__container-imgbx--1">
               <img src="images/smartphone-solmusic.webp" alt="smartphone" class="grid-3__container-img">
             </div>
@@ -150,10 +148,13 @@
         <div class="grid-4__container">
           <div class="grid-4__container-item-1">
             <h2 class="heading__quartenary">
-              <span class="heading__quartenary--1"> Our </span>
-              <span class="heading__quartenary--2"> Concept </span>
-              <span class="heading__quartenary--3"> &  </span>
-              <span class="heading__quartenary--4">  artists </span>
+              <span class="heading__quartenary--1">Our</span>
+              &nbsp;
+              <span class="heading__quartenary--2">concept</span>
+              &nbsp;
+              <span class="heading__quartenary--3">&</span>
+              &nbsp;
+              <span class="heading__quartenary--4">artistes</span>
             </h2>
           </div>
 
@@ -184,7 +185,7 @@
 
           <div class="grid-5__container-item-4" >
             <img src="images/4-Live streams.jpg" alt="a man playing guitar"  class="grid-5__container-img2">
-            <p class="grid-5__container-img-captions">Live Streems </p>
+            <p class="grid-5__container-img-captions">Live Streams </p>
           </div>
         </div>
         
@@ -195,9 +196,11 @@
         <div class="grid-6__container">
           <div class="grid-6__container-item-1">
             <h2 class="heading__sixtenary">
-              <span class="heading__sixtenary--1"> Subscription</span>
+              <span class="heading__sixtenary--1">Subscription</span>
+              &nbsp;
               <span class="heading__sixtenary--2">from</span>
-              <span class="heading__sixtenary--3">$15/month</span>
+              &nbsp;
+              <span class="heading__sixtenary--3">$15 per month</span>
             </h2>
 
            <h3 class=" heading__sixtenary--4">Start a free trial now</h3>
@@ -206,7 +209,7 @@
             <p class="paragraph__sixtenary">Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit praesentium impedit fugiat earum, nesciunt, id quas deserunt rerum voluptatem vel quibusdam aspernatur autem veritatis nulla fuga? Dolores, aperiam maxime. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ea minima provident necessitatibus exercitationem, vitae autem illum vel sapiente reprehenderit veniam aut doloremque quo amet. Assumenda hic doloribus tempora repellendus?</p>
            </div>
 
-           <div class="u-top">
+           <div class="u-top section-5-btn">
             <a href="#" class="btn btn--pink">try it now</a>
            </div>
            
@@ -242,7 +245,8 @@
           <div class="grid-7__container-item-1">
             <h2 class="septenary__heading">
               <span class="septenary__heading--1">Why go</span>
-              <span class="septenary__heading--2">premium</span>
+              &nbsp;
+              <span class="septenary__heading--2">premium?</span>
             </h2>
 
             <p class="septenary__paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam molestiae consequuntur itaque consequatur minima ut, explicabo placeat magni quas et nisi doloremque nam recusandae! Perferendis magnam velit voluptates dolores?</p>
@@ -269,5 +273,86 @@
         </div>
       </section>
       </main>
+
+      <footer>
+        <div class="footer-top">
+          <h1>Follow us on social media</h1>
+          <div>
+            <ul class="footer-top-list">
+              <li>
+                <a href="">
+                  <svg class="list-icons">
+                    <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="list-icons">
+                    <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="list-icons">
+                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-1">
+            <div>
+              <h4>Services</h4>
+              <ul>
+                <li>Email Marketing</li>
+                <li>Campaigns</li>
+                <li>Branding</li>
+                <li>Offline</li>
+              </ul>
+            </div>
+            <div>
+              <h4>About</h4>
+              <ul>
+                <li>Our story</li>
+                <li>Benefits</li>
+                <li>Team</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Legal</h4>
+              <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-2">
+            <h1>Subscribe to our newsletter</h1>
+            <label for="subscribe" class="label">Enter your Email Address</label>
+            <div class="input-field">
+              <input type="email" name="subscribe" id="subscribe">
+              <button class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="download">
+              <button class="btn--download download-android">
+                <img src="./images/svg/google-play-brands.svg" alt="Download From Google Playstore"/> 
+                <span>Google Playstore</span> 
+              </button>
+              <button class="btn--download download-apple">
+                <img src="./images/svg/apple-brands.svg" alt="Download from Apple AppStore"/>
+                <span>Apple Store</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="index.js"></script>
 </body>
 </html>
